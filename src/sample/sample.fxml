@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="blockSizeLbl" layoutX="26.0" layoutY="36.0" text="Enter the Block Size: " />
+      <Label fx:id="codeBookSizeLbl" layoutX="26.0" layoutY="156.0" text="Enter the Code Book Size: " />
+      <TextField fx:id="blockSizeTxt" layoutX="26.0" layoutY="75.0" />
+      <TextField fx:id="codeBookSizeTxt" layoutX="27.0" layoutY="200.0" />
+      <Button fx:id="btn1" layoutX="27.0" layoutY="271.0" mnemonicParsing="false" onAction="#chooseImage" text="Select Image" />
+      <Separator layoutX="263.0" layoutY="36.0" orientation="VERTICAL" prefHeight="309.0" prefWidth="14.0" />
+      <ImageView fx:id="originalImage" fitHeight="292.0" fitWidth="292.0" layoutX="286.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="compressedImage" fitHeight="292.0" fitWidth="292.0" layoutX="617.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="originalImageLbl" layoutX="381.0" layoutY="345.0" text="Original Image" />
+      <Label fx:id="compressedImageLbl" layoutX="709.0" layoutY="345.0" text="Compressed Image" />
+      <Separator layoutX="593.0" layoutY="46.0" orientation="VERTICAL" prefHeight="309.0" prefWidth="14.0" />
+   </children>
+</Pane>
